@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Email Creator</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/emailcreator.css"></head>
+
+  </head>
+
+  <body>
+    <div class="emailcreator">
+      <div class="emailcreator--title">
+        Share <strong>Board name </strong> with others
+      </div>
+      <div id="emailcreator1"></div>
+    </div>
+
+    <div class="emailcreator--actions">
+      <button
+        class="emailcreator--actions--btn actions--add-email"
+        onclick="">
+        Add email
+      </button>
+      <button class="emailcreator--actions--btn actions--count-email" onclick="">
+        Get emails count
+      </button>
+    </div>
+  </body>
+
+  <script src="src/emailcreator.js"></script>
+  <script>
+    const container = document.querySelector("#emailcreator1");
+    const options = {
+      placeholderText: "add more people.. here"
+    };
+
+    let sample = EmailCreator({ container, ...options });
+
+    document.querySelector(".actions--add-email").addEventListener("click", function() {
+      sample.addEmail();
+    });
+
+    document.querySelector(".actions--count-email").addEventListener("click", function() {
+      sample.getEmailCount(container);
+    });
+  </script>
+</html>
