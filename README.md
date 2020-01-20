@@ -23,6 +23,15 @@ EmailCreator({ container, ...options });
 let emailCreator = EmailCreator({ container, ...options });
 ```
 
+###  How to Run Project
+
+```sh
+git clone https://github.com/satyavanu/emailcreator.git
+cd emailcreator
+npm i
+npx http-server -o
+```
+
  # API Methods
  
  - getEmailCount()
