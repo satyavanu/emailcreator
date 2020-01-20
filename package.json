@@ -2,9 +2,8 @@
   "name": "emailcreator",
   "version": "1.0.0",
   "description": "### About Eamil creator list component functions like gmail email text field",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npx http-server -o"
   },
   "repository": {
     "type": "git",
